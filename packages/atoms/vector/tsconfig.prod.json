@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "sourceMap": false,
+    "inlineSources": false,
+    "declarationMap": false,
+    "incremental": false,
+    "module": "CommonJS"
+  },
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "dist/*.tsbuildinfo"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "@neural-network/vector",
+  "version": "0.0.0",
+  "scripts": {
+    "init": "sh .scripts/init.sh",
+    "test": ".scripts/test.sh",
+    "build": ".scripts/build.sh",
+    "react": "sh .scripts/helper/build-react.sh",
+    "watch": ".scripts/watch.sh",
+    "publish:manual": "sh .scripts/publish.sh",
+    "preversion": "sh .scripts/preversion.sh",
+    "postversion": "sh .scripts/postversion.sh",
+    "combine": ".scripts/combine.sh && .scripts/start.sh combined",
+    "start": ".scripts/start.sh",
+    "isolate": "sh .scripts/isolate.sh",
+    "analyse": "sh .scripts/analyse.sh",
+    "interactive": "sh .scripts/helper/build-interactive.sh",
+    "variations": "sh .scripts/helper/build-variations.sh",
+    "component:add": "sh .scripts/helper/add-component.sh"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "asset/",
+    "dist/"
+  ],
+  "exports": {
+    "./react": "./dist/react/index.js",
+    "./wc": "./dist/src/register.js",
+    ".": "./dist/index.js"
+  },
+  "author": "onkelhoy",
+  "private": false,
+  "dependencies": {
+    "@pap-it/system-utils": "^1.0.0"
+  },
+  "devDependencies": {
+    "@pap-it/system-doc": "^1.0.0",
+    "esbuild": "^0.17.18",
+    "tslib": "^2.5.0",
+    "sass": "^1.70.0",
+    "typescript": "^5.0.4",
+    "node-html-parser": "^6.1.5"
+  },
+  "keywords": [
+    "web-component",
+    "typescript",
+    "sass"
+  ],
+  "description": ""
+}
