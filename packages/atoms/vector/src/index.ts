@@ -1,4 +1,4 @@
-export * from './component';
-export * from './types';
-
-//    *    <-- This is an asshole
+export * from "./vector";
+export * from "./matrix";
+export * from "./layer";
+export * from "./NeuralNetwork";
